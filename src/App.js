@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let ids = []
+
+  for (let id = 1; id <= 8; id++){
+    ids.push(id)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="grid">
+        {ids.map((id) => {
+          let url = `https://stevedsimkins.mypinata.cloud/ipfs/QmTwDNr6LyRzW8H3XorFDArfKEH3GRV1SkF6bAEBF3P4GJ/${id}.jpg?img-width=1080&img-height=1080`
+          let name = `nft ${id}`
+
+          return (
+            <div className="image-container">
+              <img src={url} alt={name}/>
+            </div>
+          )
+        })}
+      </div>
     </div>
   );
 }
 
 export default App;
+
