@@ -1,3 +1,7 @@
+# IPFS Image Optimization with Pinata Dedicated Gateways
+
+This is a quick demo of how Pinata Dedicated Gateways can be used to stream IPFS images and resize them for web page optimization. Read more on how to use them with our [docs](https://docs.pinata.cloud/gateways/image-optimization) and sign up for a Pinata [Picnic Plan](https://www.pinata.cloud/pricing) to get started!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
